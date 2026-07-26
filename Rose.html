@@ -3,7 +3,7 @@
 <head>
     <title>عالم الورود</title>
 </head>
-<body long="ar" dir="rtl">
+<body>
 
     <!-- شريط التنقل العلوي -->
     <div>
@@ -11,7 +11,9 @@
             <b><a href="#rose">الورد الجوري</a></b> | 
             <b><a href="#tulip">توليب</a></b> | 
             <b><a href="#jasmine">الياسمين</a></b> | 
-            <b><a href="#care">نصائح العناية</a></b>
+            <b><a href="#care">نصائح العناية</a></b> | 
+            <b><a href="#contact">تواصل معنا</a></b> | 
+            <b><a href="#media-section">المحتوى المدمج</a></b>
         </nav>
     </div>
 
@@ -114,6 +116,66 @@
                 <td>منتظم</td>
             </tr>
         </table>
+    </div>
+
+    <hr>
+
+    <!-- نموذج التواصل (Form) -->
+    <div id="contact">
+        <h2>نموذج التواصل والاستفسار</h2>
+        <form action="#" method="post">
+            <label for="name">الاسم الكامل:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">البريد الإلكتروني:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="flower_type">الوردة المفضلة لديك:</label><br>
+            <select id="flower_type" name="flower_type">
+                <option value="rose">الورد الجوري</option>
+                <option value="tulip">زهرة التوليب</option>
+                <option value="jasmine">زهرة الياسمين</option>
+            </select><br><br>
+
+            <label for="message">رسالتك أو استفسارك:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" placeholder="اكتب استفسارك هنا..."></textarea><br><br>
+
+            <input type="submit" value="إرسال">
+            <input type="reset" value="إلغاء">
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- قسم الإطارات المدمجة (iframe) -->
+    <div id="media-section">
+        <h2>وسائط ومعلومات إضافية (iFrames)</h2>
+
+        <!-- 1. إطار فيديو (YouTube) -->
+        <h3>فيديو عن العناية بالورود:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OGOEkq6YKog?si=9Y6ICup5sWMqyK5u" title="فيديو تعليمي" frameborder="0" allowfullscreen></iframe>
+
+        <br><br>
+
+        <!-- 2. إطار عرض ملف PDF محلي -->
+        <h3>دليل العناية بالورود (ملف PDF):</h3>
+        <iframe src="gg.pdf" width="600" height="400" title="ملف دليل الورود PDF">
+            متصفحك لا يدعم عرض ملفات PDF.
+        </iframe>
+
+        <br><br>
+
+        <!-- 3. إطار خريطة الموقع (Google Maps) -->
+        <h3>موقعنا على الخريطة:</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.8184518428583!2d44.2066!3d15.3547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDIxJzE2LjkiTiA0NMKwMTInMjMuOCJF!5e0!3m2!1sar!2s!4v1600000000000!5m2!1sar!2s" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <br><br>
+
+        <!-- 4. إطار لعرض صفحة من موقع آخر (Wikipedia) -->
+        <h3>صفحة معلومات خارجية عن الزهور:</h3>
+        <iframe src="https://ar.wikipedia.org/wiki/%D0%B7%D0%B7%D0%B7" width="100%" height="400" title="صفحة ويكيبيديا عن الورود">
+            متصفحك لا يدعم عرض الإطارات المدمجة.
+        </iframe>
     </div>
 
     <br><br>
